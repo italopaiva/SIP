@@ -319,16 +319,14 @@ TRUNCATE TABLE `users`;
 --
 
 INSERT INTO `users` (`id`, `name`, `cpf`, `email`, `login`, `password`) VALUES
-(3, 'admin', '', 'admin@admin.com', 'admin', '21232f297a57a5a743894a0e4a801fc3'),
-(4, 'Italo', '', 'italo@italo.com', 'italo', '647a26221e19b6ac03b4b33b0a2dd895'),
-(5, 'Macario', '', 'macario@macario.com', 'macario', '6b5d45b4a73b2be619e0710c80b08b0e'),
-(6, 'filipe', '', 'filipe@filipe.com', 'filipe', 'a5530b58fabf3c5c89189ed6c7a065f5'),
-(7, 'tiago', '', 'tiago@tiago.com', 'tiago', 'c11845c9a05c8df7b137f49504dd918b'),
-(8, 'Richard', '04106969190', 'richard@gmail.com', 'richard', '6ae199a93c381bf6d5de27491139d3f9'),
-(9, 'Breno', '21312423542', 'breno@gmail.com', 'breno', '4b4070bf857ce36407f2d14f016d8279'),
-(10, 'Bruna', '11111111111', 'bruna@gmail.com', 'bruna', '1f260fa281fb68be2a991eb6edc345fb'),
-(11, 'Capivara', '00240137140', 'capivara@gmail.com', 'capivara', '29b5a2f496880fa1f5f9ef734032c13d'),
-(12, 'Tiririca', '40181340100', 'tiririca_deputado@gmail.com', 'tiririca', '934b535800b1cba8f96a5d72f72f1611');
+(1, 'admin', '', 'admin@admin.com', 'admin', '21232f297a57a5a743894a0e4a801fc3'),
+(2, 'Italo', '', 'italo@italo.com', 'italo', '647a26221e19b6ac03b4b33b0a2dd895'),
+(3, 'Macario', '', 'macario@macario.com', 'macario', '6b5d45b4a73b2be619e0710c80b08b0e'),
+(4, 'filipe', '', 'filipe@filipe.com', 'filipe', 'a5530b58fabf3c5c89189ed6c7a065f5'),
+(5, 'tiago', '', 'tiago@tiago.com', 'tiago', 'c11845c9a05c8df7b137f49504dd918b'),
+(6, 'Richard', '04106969190', 'richard@gmail.com', 'richard', '6ae199a93c381bf6d5de27491139d3f9'),
+(7, 'Breno', '21312423542', 'breno@gmail.com', 'breno', '4b4070bf857ce36407f2d14f016d8279'),
+(8, 'Bruna', '11111111111', 'bruna@gmail.com', 'bruna', '1f260fa281fb68be2a991eb6edc345fb');
 
 -- --------------------------------------------------------
 
