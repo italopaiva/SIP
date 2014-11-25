@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 22, 2014 at 01:17 AM
+-- Generation Time: Nov 25, 2014 at 07:56 AM
 -- Server version: 5.5.40-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.5
 
@@ -27,9 +27,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `course` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_course` int(11) NOT NULL AUTO_INCREMENT,
   `course_name` varchar(40) NOT NULL,
-  PRIMARY KEY (`id`)
+  `course_type` int(11) NOT NULL,
+  `is_finantiated` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id_course`),
+  UNIQUE KEY `course_name` (`course_name`),
+  KEY `course_type` (`course_type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -262,7 +266,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `login` varchar(20) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `users`
@@ -352,11 +356,18 @@ INSERT INTO `user_user_type` (`id_user`, `id_user_type`) VALUES
 (6, 5),
 (7, 5),
 (8, 5),
-(2, 3);
+(2, 3),
+(9, 5);
 
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `course`
+--
+ALTER TABLE `course`
+  ADD CONSTRAINT `COURSE_COURSETYPE_FK` FOREIGN KEY (`course_type`) REFERENCES `course_type` (`id_course_type`);
 
 --
 -- Constraints for table `module_permission`
